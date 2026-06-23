@@ -3,6 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/bakery.iml" filepath="$PROJECT_DIR$/.idea/bakery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bakery_auth_service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bakery_auth_service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bakery_cart_service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bakery_cart_service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bakery_notification_service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bakery_notification_service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bakery_order_service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bakery_order_service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bakery_payment_service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bakery_payment_service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bakery_product_service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bakery_product_service.main.iml" />
     </modules>
   </component>
 </project>

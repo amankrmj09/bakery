@@ -2,5 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bakery_api_gateway" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bakery_auth_service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bakery_cart_service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bakery_eureka_server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bakery_notification_service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bakery_order_service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bakery_payment_service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bakery_product_service" vcs="Git" />
   </component>
 </project>
