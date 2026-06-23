@@ -30,3 +30,6 @@
 	path = bakery_product_service
 	url = https://github.com/amankrmj01/bakery_product_service.git
 	branch = main
+[submodule "config-server"]
+	path = config-server
+	url = https://github.com/amankrmj09/bakery-config-servers
