@@ -36,3 +36,6 @@
 [submodule "config-repo"]
 	path = config-repo
 	url = https://github.com/amankrmj09/bakery-config-repo
+[submodule "common-libs"]
+	path = common-libs
+	url = https://github.com/amankrmj09/bakery-common-libs
