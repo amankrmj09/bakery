@@ -129,6 +129,18 @@ services:
     networks:
       - dokploy-network
 
+  redis-gateway:
+    image: redis:8.8-alpine
+    container_name: bakery-gateway-redis
+    restart: unless-stopped
+    ports:
+      - "6380:6379"
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_gateway_data:/data
+    networks:
+      - dokploy-network
+
 networks:
   dokploy-network:
     external: true
@@ -141,3 +153,4 @@ volumes:
   postgres_notifications_data:
   mongo_products_data:
   redis_carts_data:
+  redis_gateway_data:
