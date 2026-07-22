@@ -10,7 +10,7 @@ services:
     environment:
       POSTGRES_DB: bakery_auth
       POSTGRES_USER: auth_user
-      POSTGRES_PASSWORD: auth_password
+      POSTGRES_HOST_AUTH_METHOD: trust
       POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
     volumes:
       - postgres_auth_data:/var/lib/postgresql
@@ -26,7 +26,7 @@ services:
     environment:
       POSTGRES_DB: bakery_orders
       POSTGRES_USER: order_user
-      POSTGRES_PASSWORD: order_password
+      POSTGRES_HOST_AUTH_METHOD: trust
       POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
     volumes:
       - postgres_orders_data:/var/lib/postgresql
@@ -42,7 +42,7 @@ services:
     environment:
       POSTGRES_DB: bakery_payments
       POSTGRES_USER: payment_user
-      POSTGRES_PASSWORD: payment_password
+      POSTGRES_HOST_AUTH_METHOD: trust
       POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
     volumes:
       - postgres_payments_data:/var/lib/postgresql
@@ -58,7 +58,7 @@ services:
     environment:
       POSTGRES_DB: bakery_carts
       POSTGRES_USER: cart_user
-      POSTGRES_PASSWORD: cart_password
+      POSTGRES_HOST_AUTH_METHOD: trust
       POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
     volumes:
       - postgres_carts_data:/var/lib/postgresql
@@ -74,7 +74,7 @@ services:
     environment:
       POSTGRES_DB: bakery_notifications
       POSTGRES_USER: notification_user
-      POSTGRES_PASSWORD: notification_password
+      POSTGRES_HOST_AUTH_METHOD: trust
       POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
     volumes:
       - postgres_notifications_data:/var/lib/postgresql
@@ -89,7 +89,6 @@ services:
       - "27017:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: product_user
-      MONGO_INITDB_ROOT_PASSWORD: product_password
       MONGO_INITDB_DATABASE: bakery_products
     volumes:
       - mongo_products_data:/data/db
